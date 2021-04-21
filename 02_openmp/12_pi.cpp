@@ -5,8 +5,9 @@ int main() {
   double dx = 1. / n;
   double pi = 0;
   for (int i=0; i<n; i++) {
+    printf("%d: %d\n",omp_get_thread_num(),i);
     double x = (i + 0.5) * dx;
     pi += 4.0 / (1.0 + x * x) * dx;
   }
-  printf("%17.15f\n",pi);
+  printf("%17.15f\n",p);
 }
