@@ -9,5 +9,5 @@ int main() {
     double x = (i + 0.5) * dx;
     pi += 4.0 / (1.0 + x * x) * dx;
   }
-  printf("%17.15f\n",p);
+  printf("%17.15f\n",pi);
 }
